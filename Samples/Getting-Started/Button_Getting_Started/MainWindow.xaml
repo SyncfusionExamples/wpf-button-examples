@@ -1,0 +1,66 @@
+﻿<Window x:Class="Button_Getting_Started.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Button_Getting_Started"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Setting Label" Grid.Column="0" Grid.Row="0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        <TextBlock Text="Setting Size Mode" Grid.Column="0" Grid.Row="1" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        <TextBlock Text="Setting Image" Grid.Column="0" Grid.Row="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        <TextBlock Text="Setting Icon Size" Grid.Column="0" Grid.Row="3" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">
+            <syncfusion:ButtonAdv Label="Log-in" SmallIcon="Images\usersmall.png"/>
+        </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="Small" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <syncfusion:ButtonAdv SizeMode="Small" SmallIcon="Images\usersmall.png" Height="30" Width="30" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1">
+            <TextBlock Text="Normal" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <syncfusion:ButtonAdv Label="Log-in" SmallIcon="Images\usersmall.png" SizeMode="Normal"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.Row="1">
+            <TextBlock Text="Large" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <syncfusion:ButtonAdv Label="Log-in" LargeIcon="Images\userlarge.png" SizeMode="Large"/>
+        </StackPanel>
+        
+        <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">
+            <TextBlock Text="Small" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="Images\syncfusion.png" SizeMode="Small" Height="30" Width="30" />
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Column="2" Grid.Row="2" >
+            <TextBlock Text="Normal" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="Images\syncfusion.png" SizeMode="Normal"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Column="3" Grid.Row="2">
+            <TextBlock Text="Large" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <syncfusion:ButtonAdv Label="Syncfusion" LargeIcon="Images\syncfusion.png" SizeMode="Large"/>
+        </StackPanel>
+        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3">
+            <syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="Images\syncfusion.png" SizeMode="Normal" IconHeight="20" IconWidth="20"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="3">
+            <syncfusion:ButtonAdv Label="Syncfusion" SmallIcon="Images\syncfusion.png" SizeMode="Normal" IconHeight="30" IconWidth="30"/>
+        </StackPanel>
+    </Grid>
+</Window>
